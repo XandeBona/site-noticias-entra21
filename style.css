@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: rgb(70, 171, 230);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+}
+
+.photo {
+    width: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+}
