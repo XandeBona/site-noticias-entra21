@@ -4,6 +4,10 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+body {
+    background-color: rgb(241, 241, 241);
+}
+
 .menu {
     background-color: rgb(70, 171, 230);
     height: 50px;
@@ -19,7 +23,8 @@
 .links {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    align-items: center;
+    gap: 10px;
 }
 
 .links a {
@@ -32,31 +37,45 @@
     background-color: rgb(157, 215, 248);
 }
 
-.user{
+.photo_logo {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Formatacao para a parte de foto e nome do usuario */
+.user {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 4px;
 }
 
-.photo {
-    width: 33px;
+.photo_user {
+    width: 40px;
     border-radius: 50%;
     cursor: pointer;
 }
 
+/*Formatacao para a div principal das noticias principais */
 .noticias_principais {
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
+/*Fonte para o titulo da noticia */
 .noticias_principais p {
-    font-size: 15px;
+    font-size: 17px;
 }
 
+/*Fonte para o subtitulo da noticia */
 .noticias_principais span {
     font-size: 11px;
+}
+
+.noticias_principais a {
+    text-decoration: none;
+    color: black;
 }
 
 .imagem_noticias_principais {
@@ -66,6 +85,7 @@
     border-radius: 10px;
 }
 
+/*Formatacao da div de cada noticia principal individual */
 .noticia_principal_interno {
     padding: 10px;
     border-bottom: .5px solid rgb(175, 175, 175);
@@ -76,12 +96,18 @@
     padding: 10px;
 }
 
+.noticias_secundarias a {
+    text-decoration: none;
+    color: black;
+}
+
 .imagem_noticia_secundaria {
     width: 10em;
     height: 10em;
     border-radius: 10px;
 }
 
+/*Formatacao da div de cada noticia secundaria individual */
 .noticia_secundaria_interno {
     display: flex;
     flex-direction: row;
@@ -91,4 +117,14 @@
     border-bottom: .5px solid rgb(175, 175, 175);
     margin-bottom: 10px;
 
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 11px;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
 }
