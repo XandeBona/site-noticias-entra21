@@ -4,11 +4,12 @@
         padding: 0;
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
-    
+
     body {
-        background-color: #deff84;
+        background-color: rgb(174, 192, 58);
     }
-    
+
+    /* Formatacao do menu */
     .menu {
         background-color: rgb(70, 171, 230);
         height: 50px;
@@ -20,25 +21,25 @@
         color: white;
         font-size: 12px;
     }
-    
+
     .links {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 10px;
     }
-    
+
     .links a {
         color: white;
         text-decoration: none;
         padding: 0px;
     }
-    
+
     .photo_logo {
         width: 30px;
         cursor: pointer;
     }
-    
+
     /* Formatacao para a parte de foto e nome do usuario */
     .user {
         display: flex;
@@ -46,13 +47,19 @@
         align-items: center;
         gap: 4px;
     }
-    
+
     .photo_user {
         width: 40px;
         border-radius: 50%;
         cursor: pointer;
     }
-    
+
+    .nome_usuario {
+        display: block;
+        font-size: 18px;
+        padding: 10px;
+    }
+
     /*Formatacao para a div principal das noticias principais */
     .noticias_principais {
         display: flex;
@@ -62,51 +69,58 @@
         box-sizing: border-box;
         width: 100%;
     }
-    
+
     /*Fonte para o titulo da noticia */
     .noticias_principais p {
         font-size: 17px;
     }
-    
+
     /*Fonte para o subtitulo da noticia */
     .noticias_principais span {
         font-size: 11px;
     }
-    
+
     .noticias_principais a {
         text-decoration: none;
         color: black;
     }
-    
-    .imagem_noticias_principais {
+
+    .imagem_noticia_principal {
         width: 100%;
         height: 8em;
         margin-top: 5px;
         border-radius: 10px;
+        object-fit: cover;
+
     }
-    
+
     /*Formatacao da div de cada noticia principal individual */
     .noticia_principal_interno {
         padding: 10px;
         border-bottom: .5px solid rgb(175, 175, 175);
     }
-    
+
+    /*Formatacao para a div principal das noticias secundarias */
     .noticias_secundarias {
         font-size: 12px;
         padding: 10px;
     }
-    
+
     .noticias_secundarias a {
         text-decoration: none;
         color: black;
     }
-    
+
+    .conteudo_texto_secundarias {
+        flex: 1;
+    }
+
     .imagem_noticia_secundaria {
         width: 10em;
         height: 10em;
         border-radius: 10px;
     }
-    
+
     /*Formatacao da div de cada noticia secundaria individual */
     .noticia_secundaria_interno {
         display: flex;
@@ -116,9 +130,9 @@
         padding: 0 0 10px 0;
         border-bottom: .5px solid rgb(175, 175, 175);
         margin-bottom: 10px;
-    
+
     }
-    
+
     footer {
         background-color: black;
         color: white;

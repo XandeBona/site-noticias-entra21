@@ -53,6 +53,10 @@ body {
     cursor: pointer;
 }
 
+.nome_usuario {
+    display: none;
+}
+
 /*Formatacao para a div principal das noticias principais */
 .noticias_principais {
     display: flex;
@@ -84,6 +88,7 @@ body {
     margin-top: 5px;
     border-radius: 10px;
     object-fit: cover;
+
 }
 
 /*Formatacao da div de cada noticia principal individual */
