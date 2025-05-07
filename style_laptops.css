@@ -6,7 +6,7 @@
     }
 
     body {
-        background-color: rgb(174, 192, 58);
+        background-color: rgb(241, 241, 241);
     }
 
     /* Formatacao do menu */
@@ -17,9 +17,9 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 0 15px 0 15px;
+        padding: 0 50px 0 50px;
         color: white;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .links {
@@ -36,7 +36,7 @@
     }
 
     .photo_logo {
-        width: 30px;
+        width: 37px;
         cursor: pointer;
     }
 
@@ -56,8 +56,7 @@
 
     .nome_usuario {
         display: block;
-        font-size: 18px;
-        padding: 10px;
+        padding: 7px;
     }
 
     /*Formatacao para a div principal das noticias principais */
@@ -72,12 +71,12 @@
 
     /*Fonte para o titulo da noticia */
     .noticias_principais p {
-        font-size: 17px;
+        font-size: 21px;
     }
 
     /*Fonte para o subtitulo da noticia */
     .noticias_principais span {
-        font-size: 11px;
+        font-size: 15px;
     }
 
     .noticias_principais a {
@@ -87,7 +86,7 @@
 
     .imagem_noticia_principal {
         width: 100%;
-        height: 8em;
+        height: 15em;
         margin-top: 5px;
         border-radius: 10px;
         object-fit: cover;
@@ -102,8 +101,14 @@
 
     /*Formatacao para a div principal das noticias secundarias */
     .noticias_secundarias {
-        font-size: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        text-align: center;
+        gap: 16px;
         padding: 10px;
+        margin-left: 12%;
+
     }
 
     .noticias_secundarias a {
@@ -119,17 +124,18 @@
         width: 10em;
         height: 10em;
         border-radius: 10px;
+        object-fit: cover;
     }
 
     /*Formatacao da div de cada noticia secundaria individual */
     .noticia_secundaria_interno {
+        width: 280px;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 8px;
-        padding: 0 0 10px 0;
-        border-bottom: .5px solid rgb(175, 175, 175);
-        margin-bottom: 10px;
+        padding: 10px;
+        border-bottom: 1px solid rgb(175, 175, 175);
 
     }
 
