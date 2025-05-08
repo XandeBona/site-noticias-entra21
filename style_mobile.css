@@ -10,7 +10,7 @@ body {
 
 /* Formatacao do menu */
 .menu {
-    background-color: rgb(70, 171, 230);
+    background: linear-gradient(90deg, #0077b6, #00b4d8);
     height: 50px;
     display: flex;
     flex-direction: row;
